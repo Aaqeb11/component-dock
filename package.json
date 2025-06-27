@@ -1,0 +1,13 @@
+{
+  "name": "shadcn-compoent-library",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "typescript": "^5.8.3"
+  }
+}
