@@ -1,18 +1,44 @@
 {
-  "name": "cli",
+  "name": "@aaqeb11/component-dock",
   "version": "0.0.1",
   "description": "Component library starter with shadcn/ui",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "type": "module",
   "files": [
     "dist"
   ],
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "bin": {
+    "component": "./dist/index.js"
+  },
+  "keywords": [
+    "cli",
+    "component",
+    "shadcn",
+    "ui"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.8",
     "@types/node": "^24.0.4",
+    "rollup": "^4.8.0",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.6.3",
+    "ora": "^8.2.0",
+    "picocolors": "^1.1.1"
   }
 }
