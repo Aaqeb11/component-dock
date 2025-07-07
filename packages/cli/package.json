@@ -1,6 +1,10 @@
 {
-  "name": "@aaqeb11/component-dock",
-  "version": "0.0.1",
+  "name": "@aaqeb11/shadcn-component-library",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaqeb11/shadcn-component-library.git"
+  },
   "description": "Component library starter with shadcn/ui",
   "main": "dist/index.js",
   "type": "module",
@@ -8,11 +12,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "rollup": "rollup -c",
+    "build": "tsc",
     "dev": "rollup -c -w"
   },
   "bin": {
-    "component": "./dist/index.js"
+    "component": "dist/index.js"
   },
   "keywords": [
     "cli",
@@ -40,5 +45,8 @@
     "inquirer": "^12.6.3",
     "ora": "^8.2.0",
     "picocolors": "^1.1.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/aaqeb11"
   }
 }
