@@ -47,7 +47,8 @@ export async function createCommand(
 
     console.log(pc.green("\n✨ Project created successfully!\n"));
     console.log(pc.blue("Next steps:"));
-    console.log(pc.gray(`  cd ${projectName}`));
+    console.log(pc.gray(`  cd ${projectName}/src/components/ui`));
+    console.log(pc.gray("Add a component"));
     console.log(pc.gray(`  ${config.packageManager} install`));
     console.log(pc.gray(`  ${config.packageManager} run dev`));
   } catch (error: any) {
