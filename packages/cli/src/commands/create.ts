@@ -89,6 +89,7 @@ async function setupProjectFiles(
       clsx: "^2.0.0",
       "tailwind-merge": "^2.2.0",
       "lucide-react": "^0.294.0",
+      tslib: "^2.8.1",
     },
     devDependencies: {
       "@types/react": "^18.2.45",
@@ -120,7 +121,7 @@ import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import { terser } from '@rollup/plugin-terser';
+import terser from '@rollup/plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 import dts from 'rollup-plugin-dts';
 import { readFileSync } from 'fs';
