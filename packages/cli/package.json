@@ -1,6 +1,7 @@
 {
-  "name": "@aaqeb11/shadcn-component-library",
-  "version": "1.0.1",
+  "name": "@aaqeb11/component-dock",
+  "version": "1.0.2",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aaqeb11/shadcn-component-library.git"
@@ -26,7 +27,6 @@
     "ui"
   ],
   "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-json": "^6.1.0",
