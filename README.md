@@ -32,7 +32,7 @@ npm dev
 ## 📚 Documentation
 
 - [CLI Documentation](./packages/cli/README.md) - Complete CLI usage guide
-- [Contributing Guide](./CONTRIBUTING.md) - How to contribute to the project
+- [Contributing Guide](./packages/cli/README.md#-contributing) - How to contribute to the project
 
 ## 📄 License
 
