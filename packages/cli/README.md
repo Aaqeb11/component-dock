@@ -287,12 +287,4 @@ component create test-library
 
 MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- [shadcn/ui](https://ui.shadcn.com/) - For the amazing component system
-- [Radix UI](https://www.radix-ui.com/) - For accessible component primitives
-- [Tailwind CSS](https://tailwindcss.com/) - For the utility-first CSS framework
-
----
-
 **Component Dock** - ⚓ Scaffold your component libraries with confidence
