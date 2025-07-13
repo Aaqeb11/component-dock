@@ -53,7 +53,6 @@ Component Dock bridges this gap by providing you with a production-ready foundat
 ## ✨ Features
 
 - 🚀 **Quick Setup** - Create a complete component library in seconds
-- 🎨 **shadcn/ui Integration** - Pre-configured with shadcn/ui components
 - 📦 **Dual Package Support** - Builds both CommonJS and ESM formats
 - 🔧 **TypeScript Ready** - Full TypeScript support with proper declarations
 - 🎭 **Tailwind CSS** - Pre-configured with custom design tokens
@@ -272,7 +271,7 @@ We welcome contributions! Please feel free to submit a Pull Request.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/component-dock.git
+git clone https://github.com/aaqeb11/component-dock.git
 
 # Install dependencies
 npm install
