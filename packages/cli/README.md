@@ -172,9 +172,13 @@ npm run type-check
 npm run clean
 ```
 
+You're absolutely right! The "Adding Components" section should be more comprehensive and flexible. Here's a better version:
+
 ## 📚 Adding Components
 
-Your project comes pre-configured for shadcn/ui components. Add components to your library:
+Your project comes pre-configured for shadcn/ui components, but you have complete flexibility in how you build your component library:
+
+### Using shadcn/ui CLI (Recommended)
 
 ```bash
 # Add specific components
@@ -184,7 +188,47 @@ npx shadcn-ui@latest add button input
 npx shadcn-ui@latest add
 ```
 
-Components will be automatically added to `src/components/ui/` and you can export them from your main `index.ts` file.
+### Manual Component Creation
+
+Create your own components from scratch:
+
+```bash
+# Create a new component directory
+mkdir src/components/ui/custom-button
+
+# Add your component files
+touch src/components/ui/custom-button/index.tsx
+touch src/components/ui/custom-button/custom-button.stories.tsx
+```
+
+### Using Other Component Libraries
+
+Install and integrate components from other libraries:
+
+```bash
+# Radix UI primitives
+npm install @radix-ui/react-dialog @radix-ui/react-dropdown-menu
+
+```
+
+### Copying from External Sources
+
+You can also copy and adapt components from:
+- [shadcn/ui components](https://ui.shadcn.com/docs/components) - Copy source code directly
+- [Radix UI examples](https://www.radix-ui.com/) - Use their component patterns
+- [Tailwind UI](https://tailwindui.com/) - Adapt their component designs
+- Other open-source component libraries
+
+### Exporting Components
+
+After adding any components, make sure to export them from your main `index.ts` file:
+
+```typescript
+// src/index.ts
+export { Button } from './components/ui/button';
+export { Input } from './components/ui/input';
+export { CustomButton } from './components/ui/custom-button';
+```
 
 ## 🔧 Configuration
 
